@@ -12,6 +12,39 @@ support
 These are the details on each toolchain currently available on this repo
 ___________________________________________________________________________________________________________
 
+		TOOLCHAIN arm-cortex_a15-linux-gnueabihf-linaro_4.8.3-2014.04
+
+- Built using latest crosstool-ng toolchain builder (hg+default-4cfbdb295328)
+- Generic ARM settings (inspired by latest Linaro builds) for target architecture and target optimizations:
+    CT_ARCH_ARCH="armv7-a"
+    CT_ARCH_CPU=""
+    CT_ARCH_TUNE="cortex-a15"
+    CT_ARCH_FPU="vfpv3-d16"
+    CT_ARCH_FLOAT_SOFTFP=y
+    CT_ARCH_FLOAT="softfp"
+    CT_ARCH_ARM_MODE="thumb"
+    CT_ARCH_ARM_MODE_THUMB=y
+
+- Linux Kernel 3.0.101
+- GCC Linaro-4.8-2014.04 (4.8.3)
+- Binutils 2.24
+- EGLibc 2.18
+- DMalloc 5.5.2
+- Duma 2.5.15
+- GDB Linaro-7.6-2013.05
+- LTrace 0.5.3
+- STrace 4.8
+- GMP 5.1.1
+- MPFR 3.1.2
+- ISL 0.11.1
+- CLOOG 0.15.11
+- MPC 1.0.1
+- LibElf 0.8.13
+- Multilib support
+- Alias "arm-gnueabi-"
+
+___________________________________________________________________________________________________________
+
                       TOOLCHAIN arm-unknown-linux-gnueabi-linaro_4.8.3-2013.12
 
 - Built using latest crosstool-ng toolchain builder (hg+default-4cfbdb295328)
